@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -33,4 +33,4 @@ char *_getenv(char *env);
 // void prompt();  note: this function is not used
 // void execute(char *command); **
 
-#endif // MAIN_H
+#endif

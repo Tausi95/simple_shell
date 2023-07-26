@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+#include "shell.h"
 
 /**
  * _strlen - returns the absolute length of a string
