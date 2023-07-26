@@ -9,7 +9,6 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-#define MAX_COMMAND_LENGTH 100
 #define BUFFER_LEN 1024
 
 extern char **environ;
