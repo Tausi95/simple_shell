@@ -29,7 +29,8 @@ char *read_line();
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *_getenv(char *env);
 
-// void prompt();  note: this function is not used
-// void execute(char *command); **
-
+/**
+* void prompt();  note: this function is not used
+* void execute(char *command); **
+*/
 #endif
