@@ -3,7 +3,7 @@
 /**
  * find_path - find the path of the command
  * @av: the command to look for its path
- *Return: string: full path of the command
+ * Return: string: full path of the command
  */
 char *find_path(char *av)
 {
@@ -14,7 +14,10 @@ char *find_path(char *av)
 	path = _getenv("PATH");
 	for (len = 0; path[len]; len++)
 		;
-	cpath = malloc(sizeof(char) * len + 1);
+
+	cpath = malloc(sizeof(char) * (len + 1));
+	if (!cpath)
+		return (NULL);
 
 	for (i = 0; path[i]; i++)
 		cpath[i] = path[i];
@@ -35,7 +38,7 @@ char *find_path(char *av)
 			token = concat_all(token, av);
 		}
 	}
-	free(token);
 	free(cpath);
 	return (NULL);
 }
+

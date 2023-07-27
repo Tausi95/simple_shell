@@ -1,8 +1,9 @@
 #include "shell.h"
+
 /**
  * print_env - prints all the environment variables
  *
- *Return: Void
+ * Return: Void
  */
 void print_env(void)
 {
@@ -25,12 +26,14 @@ void print_env(void)
 /**
  * change_dir - change directory with builtin cd
  * @argvv: array of string arguments
+ *
  * Return: Void
  */
 void change_dir(char **argvv)
 {
 	char *pth;
 	int i, j;
+
 	if (argvv[1] == NULL)
 		pth = getenv("HOME");
 	else if (_strcmp(argvv[1], "-") == 0)
@@ -52,8 +55,9 @@ void change_dir(char **argvv)
 
 /**
  * __exit - exit with status given in arguments
- * @argvv:array of strings to execute builtin
- *Return: Void
+ * @argvv: array of strings to execute builtin
+ *
+ * Return: Void
  */
 void __exit(char **argvv)
 {
@@ -72,17 +76,16 @@ void __exit(char **argvv)
 /* Function to execute builtin */
 /**
  * builtins - execute builtins
- * @argvv:array of strings to execute builtin
+ * @argvv: array of strings to execute builtin
  * @i: index of builtin
- *Return: Void
+ *
+ * Return: Void
  */
 void builtins(char **argvv, int i)
 {
-
 	switch (i)
 	{
 	case 1:
-
 		__exit(argvv);
 		break;
 	case 2:

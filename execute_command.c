@@ -1,14 +1,18 @@
 #include "shell.h"
+
 /**
  * exec_command - execute command
  * @argvv: array of strings to check
- *Return: void
+ *
+ * Return: void
  */
 void exec_command(char **argvv)
 {
 	int pid = 0;
+
 	if (!argvv || !argvv[0])
 		return;
+
 	pid = fork();
 	if (pid == 0)
 	{
@@ -28,3 +32,4 @@ void exec_command(char **argvv)
 		wait(NULL);
 	}
 }
+

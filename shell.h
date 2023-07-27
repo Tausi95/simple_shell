@@ -13,6 +13,7 @@
 
 extern char **environ;
 
+/* Function prototypes */
 char *concat_all(char *s1, char *s2);
 char *find_path(char *av);
 char **split_line(char *line, int bufsize);
@@ -30,7 +31,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 char *_getenv(char *env);
 
 /**
-* void prompt();  note: this function is not used
-* void execute(char *command); **
-*/
-#endif
+ * shell.h
+ * Header file for the custom shell implementation.
+ */
+#endif /* SHELL_H */
