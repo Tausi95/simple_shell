@@ -17,24 +17,24 @@ simple_shell, is a custom implementation of a simple UNIX shell. A minimalistic 
 
 .SH OVERVIEW
 
-Similar to other legendary command line interfaces, the simple_shell takes input from either the terminal or scripts and executes them as they appear. 
+Similar to other legendary command line interfaces, the simple_shell takes input from either the terminal or scripts and executes them as they appear.
 
 
 .SH INVOCATION
 
-The GNU Compiler Collectiojn, gcc, is recommended for compiling simple_shell with extra flags as shown.  
+The GNU Compiler Collectiojn, gcc, is recommended for compiling simple_shell with extra flags as shown.
 .P
 .RS
 .B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 .P
 .RE
-In interactive mode, the simple_shell works by taking user input on the terminal after pressing the enter key. Note that the prompt ('$') will appear and you will then be in interactive mode and able to enter commands followed by "enter." 
+In interactive mode, the simple_shell works by taking user input on the terminal after pressing the enter key. Note that the prompt ('$') will appear and you will then be in interactive mode and able to enter commands followed by "enter."
 .P
 .RS
 .B $ ./hsh
 .P
 .RE
-In non-interactive mode, users can specify shell scripts to be executed by simple_shell usually through the use of pipes '|'. 
+In non-interactive mode, users can specify shell scripts to be executed by simple_shell usually through the use of pipes '|'.
 .P
 .RS
 .B echo 'pwd' | ./hsh
@@ -125,6 +125,5 @@ Please report any issues/bugs to the contributors listed in the AUTHORs section.
 .SH SEE ALSO
 sh
 
-
-Frankley Omwenga (nchorefrankley27@gmail.com)
-Karima el ghayad (kimo.daniel11@gmail.com)
+Chancy Tsonga
+Kirimi Nathan
