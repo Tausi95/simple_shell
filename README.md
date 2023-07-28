@@ -9,15 +9,15 @@ Clone this repository in your terminal:
 git clone
 
 ## Usage
-```bash 
+```bas
 ./hsh
-``` 
+```
 ## Example
 ```bash
 $ ./hsh
-$ ls -l 
+$ ls -l
 
 
-## Files    
+## Files
 File|Description
----|---     
+---|---
