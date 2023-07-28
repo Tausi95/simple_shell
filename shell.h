@@ -88,16 +88,16 @@ typedef struct passinfo
 	int env_changed;
 	int status;
 
-	char **cmd_buf;		/* pointer to cmd ; chain buffer, for memory mangement */
+	char **cmd_buf;	  /* pointer to cmd ; chain buffer, for memory mangement */
 	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
 	int histcount;
 } info_t;
 
-#define INFO_INIT                                                           \
-	{                                                                         \
+#define INFO_INIT                                                               \
+	{                                                                           \
 		NULL, NULL, NULL, 0, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, NULL, \
-				0, 0, 0                                                             \
+			0, 0, 0                                                             \
 	}
 
 /**
@@ -224,10 +224,10 @@ list_t *node_starts_with(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 
 /* chain.c */
-int is_chain(info_t *, char *, size_t *);
-void check_chain(info_t *, char *, size_t *, size_t, size_t);
-int replace_alias(info_t *);
-int replace_vars(info_t *);
+int is_chain_delimeter(info_t *, char *, size_t *);
+void check_chain_condition(info_t *, char *, size_t *, size_t, size_t);
+int replace_aliases(info_t *);
+int replace_variables(info_t *);
 int replace_string(char **, char *);
 
 #endif
